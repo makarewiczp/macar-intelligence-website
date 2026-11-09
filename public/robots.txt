@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://macarintelligence.com/sitemap.xml
