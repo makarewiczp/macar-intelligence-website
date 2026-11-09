@@ -25,7 +25,7 @@
 @media(max-width:700px){.cda-shell{grid-template-columns:48px minmax(0,1fr)}.cda-brand{justify-content:center;padding:4px 0 15px}.cda-brand>div,.cda-sidebar-label,.cda-sidelink,.cda-sample,.cda-sidebar-foot{display:none}.cda-content{padding:9px}.cda-head h3{font-size:15px}.cda-export,.cda-state small{display:none}.cda-state{flex-wrap:wrap}.cda-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.cda-settings-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cda-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.cda-kpis strong{font-size:14px}.cda-kpis small{font-size:7px}.cda-unset{font-size:7px;padding:5px}.cda-panel{padding:10px 8px}.cda-kpis .cda-invoice{grid-column:span 2}}
 @media(max-width:390px){.cda-filters>div:nth-child(n+3){display:none}.cda-settings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cda-head h3{font-size:13px}.cda-settings-head{display:block}.cda-unset{display:inline-block;margin:8px 0}}
 
-</style></head>
+</style><link rel="stylesheet" href="/assets/css/cebia-showcase-v1.2.6.css"></head>
 <body>
 <div aria-hidden="true" class="topline"></div>
 <header class="header">
@@ -70,20 +70,48 @@
 </div>
 </section>
 <section class="products" id="products">
-<div class="container product-grid">
+<div class="container product-grid cp-product-layout">
 <div class="product-copy reveal"><div class="eyebrow light">Our products / 01</div><div class="product-name">C&amp;E BILLING INTELLIGENCE &amp; ANALYTICS</div><h2 class="section-title"><span>Meet </span><span style="color:#83a5ff">CEBIA.</span></h2><p>Our first software product brings more structure and transparency to complex C&amp;E billing preparation — combining policy-based logic, transaction-level visibility and clear analytical views.</p>
 <ul class="product-features"><li><span class="tick">✓</span><span>Organized billing preparation workflows</span></li><li><span class="tick">✓</span><span>Configurable billing responsibility policies</span></li><li><span class="tick">✓</span><span>Transaction-level review and analysis</span></li></ul>
 <div class="product-actions"><a class="button button-inverse" href="https://cebia.macarintelligence.com" rel="noopener noreferrer" target="_blank"><span>Open CEBIA application </span><span aria-hidden="true" class="arrow">↗</span></a><span><i></i><span>Live product</span></span><a class="product-details-link" href="/products/cebia/">Explore CEBIA features →</a></div>
 </div>
-<div class="cebia-live-mock cebia-actual-demo" role="img" aria-label="CEBIA product interface illustrative demo">
-<div class="cda-shell"><aside class="cda-sidebar"><div class="cda-brand"><img src="/assets/brand/cebia-logo-screenshot.png" alt="CEBIA logo"/><div><strong>CEBIA</strong><small>C&amp;E BILLING INTELLIGENCE &amp; ANALYTICS</small></div></div><div class="cda-sidebar-label">WORKSPACE</div><div class="cda-sidelink selected">▦ &nbsp; Overview Dashboard</div><div class="cda-sidelink">☷ &nbsp; Job Billing Policies</div><div class="cda-sidelink">▤ &nbsp; Billing Preparation</div><div class="cda-sidelink">▤ &nbsp; Methodology &amp; Audit</div><div class="cda-sample"><small>ACTIVE DATASET</small><div>● &nbsp; Demo dataset</div><span>Synthetic sample data only</span></div><div class="cda-sidebar-foot">A Macar Intelligence product</div></aside>
-<div class="cda-content"><div class="cda-head"><div><span>MATERIAL COST CONTROL / C&amp;E</span><h3>Cost allocation overview</h3><p>Three CAP methodologies. One transparent financial picture.</p></div><span class="cda-export">Export model summary</span></div>
-<div class="cda-state"><b>● &nbsp; LIVE ANALYSIS</b><span>Active calculation</span><strong>Line Item</strong><small>CAP applied to each issue line</small></div>
-<div class="cda-panel"><div class="cda-panel-title">☰ &nbsp; Analysis Filters</div><div class="cda-filters"><div><small>CLIENT</small><span>All clients <i>⌄</i></span></div><div><small>AIRCRAFT REGISTRATION</small><span>All aircraft <i>⌄</i></span></div><div><small>CHECK TYPE</small><span>All check types <i>⌄</i></span></div><div><small>PARENT JCN / CHECK ID</small><span>All maintenance checks <i>⌄</i></span></div></div></div>
-<div class="cda-panel cda-settings"><div class="cda-panel-title cda-settings-head">☷ &nbsp; Calculation Settings <span class="cda-unset">⚠ &nbsp; 12 Job Descriptions · Not Set</span></div><div class="cda-settings-grid"><div><small>CAP Amount</small><span>€ &nbsp; 400</span></div><div><small>Handling Fee (%)</small><span>8 &nbsp; %</span></div><div><small>Min Handling Fee</small><span>€ &nbsp; 0</span></div><div><small>Max Handling Fee</small><span>—</span></div><div><small>Handling Fee Basis</small><span class="cda-blue">Total Material</span></div><div><small>Min Fee at Zero Base</small><span class="cda-blue">No — Zero Fee</span></div></div><div class="cda-model-label">Calculation Model</div><div class="cda-model"><span>Single Piece</span><strong>Line Item</strong><span>Aggregated Part Number</span></div></div>
-<div class="cda-banner">⚠ &nbsp; Provisional analysis — 12 Job Descriptions need billing policy assignment. All amounts below are illustrative.</div>
-<div class="cda-kpis"><div><small>TOTAL MATERIAL COST</small><strong>€125,000</strong><span>1,250 sample transactions</span></div><div><small>PROVIDER COST EXPOSURE</small><strong>€12,500</strong><span>Illustrative only</span></div><div><small>CUSTOMER MATERIAL</small><strong>€48,000</strong><span>Illustrative only</span></div><div><small>HANDLING FEE REVENUE</small><strong>€4,320</strong><span>Illustrative only</span></div><div class="cda-invoice"><small>TOTAL CUSTOMER INVOICE</small><strong>€52,320</strong><span>PROVISIONAL · DEMO DATA</span></div></div>
-</div></div><div class="cda-caption">Illustrative interface · All figures and records are synthetic · Not a screenshot of real customer data</div></div>
+<div class="cp-preview" role="group" aria-label="CEBIA interface preview with fully synthetic example data">
+  <div class="cp-windowbar"><span class="cp-windowdots" aria-hidden="true"><i></i><i></i><i></i></span><div class="cp-window-label"><span class="cp-window-square"></span> CEBIA <span class="cp-window-sep">/</span> PRODUCT PREVIEW</div><div class="cp-window-demo"><span class="cp-demo-dot"></span> DEMO ENVIRONMENT</div></div>
+  <div class="cp-app">
+    <aside class="cp-side" aria-label="Example application navigation">
+      <div class="cp-identity"><img src="/assets/brand/cebia-logo-screenshot.png" width="40" height="40" alt="CEBIA mark"><div class="cp-identity-text"><strong>CEBIA</strong><span>C&amp;E BILLING INTELLIGENCE<br>&amp; ANALYTICS</span></div></div>
+      <div class="cp-nav-title">WORKSPACE</div>
+      <div class="cp-nav-item cp-selected"><span class="cp-nav-icon" aria-hidden="true">▦</span><span class="cp-nav-text">Overview Dashboard</span></div>
+      <div class="cp-nav-item"><span class="cp-nav-icon" aria-hidden="true">☷</span><span class="cp-nav-text">Job Billing Policies</span></div>
+      <div class="cp-nav-item"><span class="cp-nav-icon" aria-hidden="true">▤</span><span class="cp-nav-text">Billing Preparation</span></div>
+      <div class="cp-nav-item"><span class="cp-nav-icon" aria-hidden="true">◫</span><span class="cp-nav-text">Methodology &amp; Audit</span></div>
+      <div class="cp-side-bottom"><span class="cp-side-label">ACTIVE DATASET</span><div class="cp-dataset"><span class="cp-live-dot"></span><span class="cp-dataset-text">Demo dataset</span></div><span class="cp-synth">Synthetic records only</span><div class="cp-side-divider"></div><span class="cp-powered">A Macar Intelligence product</span></div>
+    </aside>
+    <div class="cp-main">
+      <div class="cp-titlebar"><div class="cp-titles"><span class="cp-kicker">MATERIAL COST CONTROL / C&amp;E</span><h3>Cost allocation overview</h3><p>Three CAP methodologies. One transparent financial picture.</p></div><span class="cp-export">Export model summary <span aria-hidden="true">↗</span></span></div>
+      <div class="cp-running"><div><span class="cp-live-dot"></span><b>LIVE ANALYSIS</b><span class="cp-running-divider"></span><span>Active calculation</span><strong>Line Item</strong></div><span class="cp-running-hint">CAP applied to each issue line</span></div>
+      <div class="cp-card cp-filters"><div class="cp-card-heading"><span class="cp-heading-icon">≡</span><strong>Analysis Filters</strong><span class="cp-card-tag">4 active dimensions</span></div><div class="cp-filter-grid">
+        <div class="cp-input"><label>CLIENT</label><span>All clients <b>⌄</b></span></div>
+        <div class="cp-input"><label>AIRCRAFT REGISTRATION</label><span>All aircraft <b>⌄</b></span></div>
+        <div class="cp-input"><label>CHECK TYPE</label><span>All check types <b>⌄</b></span></div>
+        <div class="cp-input"><label>PARENT JCN / CHECK ID</label><span>All checks <b>⌄</b></span></div>
+      </div></div>
+      <div class="cp-card cp-calculation"><div class="cp-card-heading"><span class="cp-heading-icon">☷</span><strong>Calculation Settings</strong><span class="cp-alert-count"><span aria-hidden="true">⚠</span> 12 Job Descriptions · Not Set</span></div>
+        <div class="cp-settings-grid"><div class="cp-setting"><label>CAP Amount</label><div class="cp-value"><span class="cp-val-unit">€</span><strong>400</strong></div></div><div class="cp-setting"><label>Handling Fee (%)</label><div class="cp-value"><strong>8</strong><span class="cp-val-trail">%</span></div></div><div class="cp-setting"><label>Min Handling Fee</label><div class="cp-value"><span class="cp-val-unit">€</span><strong>0</strong></div></div><div class="cp-setting"><label>Max Handling Fee</label><div class="cp-value"><strong>—</strong><span class="cp-val-trail">No limit</span></div></div><div class="cp-setting"><label>Handling Fee Basis</label><div class="cp-value cp-picked">Total Material</div></div><div class="cp-setting"><label>Min Fee at Zero Base</label><div class="cp-value cp-picked">No — Zero Fee</div></div></div>
+        <div class="cp-model-heading">Calculation Model</div><div class="cp-model"><span>Single Piece</span><strong>Line Item</strong><span>Aggregated Part Number</span></div>
+      </div>
+      <div class="cp-notice"><span aria-hidden="true">⚠</span><span><strong>Provisional analysis</strong> — 12 Job Descriptions need billing policy assignment. All values are illustrative.</span></div>
+      <div class="cp-kpi-grid">
+        <div class="cp-kpi"><small>TOTAL MATERIAL COST</small><strong>€125,000</strong><span>1,250 demo transactions</span></div>
+        <div class="cp-kpi"><small>PROVIDER COST EXPOSURE</small><strong>€12,500</strong><span>Illustrative allocation</span></div>
+        <div class="cp-kpi"><small>CUSTOMER MATERIAL</small><strong>€48,000</strong><span>Illustrative allocation</span></div>
+        <div class="cp-kpi"><small>HANDLING FEE REVENUE</small><strong>€4,320</strong><span>Illustrative calculation</span></div>
+        <div class="cp-kpi cp-invoice"><small>TOTAL CUSTOMER INVOICE</small><strong>€52,320</strong><span>PROVISIONAL · DEMO</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="cp-preview-foot"><span>Illustrative interface — synthetic data, not a live application screenshot</span><span class="cp-foot-badge"><span></span> Built for clarity</span></div>
+</div>
 </div>
 </section>
 <section class="approach" id="approach">

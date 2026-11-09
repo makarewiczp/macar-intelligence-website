@@ -1,13 +1,19 @@
-# Macar Intelligence Website v1.2.5 — CEBIA demo style repair
+# Macar Intelligence Website — v1.2.6 / CEBIA Showcase
 
-This release fixes the unstyled CEBIA demo in Products, which resulted from the
-HTML layout and stale CSS being out of sync after deployment.
+Production-ready candidate for Macar Intelligence website, **not** for the separate CEBIA app.
 
-- Stylesheet cache-busted via `/assets/css/site-v1.2.5.css` across HTML pages.
-- CEBIA-specific styles embedded as a fallback on the four pages with the demo.
-- Demo content and existing layout otherwise unchanged.
-- PROVIDER label retained; no LST or LS Technics reference in site files.
-- No changes to the live CEBIA app or its authentication.
+## Highlights
+- Rebuilt CEBIA preview in Products to use the available width rather than squeezing a complete dashboard into a narrow column.
+- More faithful CEBIA UI: true mark from provided screenshot, navy sidebar, overview and filters, CAP settings, billing model, KPI cards, Not Set warning.
+- Settings use a measured 3-column grid; responsive breakpoints prevent right-side controls from escaping the card.
+- Responsive compact rail, 2-column settings and KPI cards on phones.
+- All data are synthetic. Neutral PROVIDER labels; no customer or employer-sensitive data.
+- Only the Macar Intelligence website is changed; CEBIA app files and configuration are untouched.
 
-Deployment: upload the contents of this archive (not the archive itself) to the GitHub
-repo root, preserving the `public/` directory, then commit to `main`.
+## Publish
+1. Review locally by opening `public/index.html` (some absolute `/assets` links require a local static server).
+2. Upload all extracted contents at the GitHub repo root, preserving the `public` tree.
+3. Verify Cloudflare Pages deployment.
+4. Check `/`, `/pl/`, `/products/cebia/` and `/pl/products/cebia/` on desktop and mobile.
+
+Note: the dashboard is an illustrative synthetic reconstruction, not a live screenshot.
