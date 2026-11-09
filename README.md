@@ -1,39 +1,34 @@
-## v1.1 — Contact update (2026-11-09)
+# Macar Intelligence — SEO v1.2 (2026-11-09)
 
-- Verified inbound address `contact@macarintelligence.com` appears in EN/PL contact sections and footers.
-- `mailto:` actions open the visitor’s configured email client. No form/backend.
-- Retains existing branding, Pages deployment and separate CEBIA environment.
-- Deploy: replace corresponding files in GitHub repo on `main`, Cloudflare Pages auto-deploys.
+Based on the exact uploaded v1.1 website. Replace the matching files in GitHub branch `main` with this full package. Cloudflare Pages uses `public` as build output.
 
-# Macar Intelligence website — production candidate v1.0
+## Changes
+- Added dedicated CEBIA product pages: `/products/cebia/` and `/pl/products/cebia/`
+- Added an internal product details link to both homepage product sections and footers
+- Added Organization and WebSite JSON-LD on the homepages, Organization/WebSite/SoftwareApplication on product pages
+- Added product URLs and language alternates to `public/sitemap.xml` (six URLs total)
+- Added product-page styling, reusing existing CSS, logo files and demo UI component
+- Contact, CEBIA application, Cloudflare configuration and privacy pages remain otherwise untouched
 
-This is a **separate** static website for `macarintelligence.com`, derived from approved v0.4. No CEBIA files, repos, Workers or Supabase settings are included or modified.
+## Caution
+- SoftwareApplication markup contains only documented facts. No invented pricing, offers or reviews. Google rich results for software applications require further properties; this markup is descriptive and makes no promise of rich results.
+- Demo values are synthetic; the illustrative product UI is not an actual application screenshot.
+- No backend, forms, tracking or external scripts added.
 
-## GitHub → Cloudflare Pages (recommended)
+## Post-deploy
+1. Validate `/`, `/pl/`, `/products/cebia/`, `/pl/products/cebia/`, `/sitemap.xml`.
+2. Test navigation and mobile widths.
+3. Re-submit `https://macarintelligence.com/sitemap.xml` in Search Console, then inspect the two new product URLs.
+4. Use Google Rich Results Test / Schema Markup Validator to validate JSON-LD.
 
-1. Create a new **private** GitHub repository `macar-intelligence-website`.
-2. Upload everything from this folder (README + `public/`), ensuring `public/index.html` exists at that path.
-3. Cloudflare dashboard → Workers & Pages → Create application → Pages → Connect to Git; select ONLY the new repository.
-4. Static project: framework preset **None**, build command **leave blank**, build output directory **public**, production branch **main**.
-5. Use the generated `*.pages.dev` URL to check `/`, `/pl/`, `/privacy/` and `/pl/privacy/`, icon loading, mobile navigation and the CEBIA outbound link.
-6. Only after test: Pages project → Custom domains → Set up domain → `macarintelligence.com`. Add `www.macarintelligence.com` afterward (or redirect www to apex in Cloudflare).
-7. **DO NOT** edit, delete or overwrite any DNS record for `cebia.macarintelligence.com`, or any existing CEBIA Worker route/Auth settings.
 
-## Important outstanding item before a fully functional commercial launch
+## Demo refresh v1.2.1
+- Replaced the old illustrative CEBIA widget with a more modern Overview Dashboard demo on ENG/PL home and product pages.
+- Removed company-specific references from all demo transaction rows and interface descriptions.
+- Created `public/assets/brand/cebia-logo-demo.svg` as an illustrative vector interpretation of the geometric C / ascending bars direction. This is **not** asserted to be the exact official CEBIA master mark; replace with approved official SVG from the separate CEBIA project when provided.
+- All figures and transactions are synthetic. No changes to CEBIA deployment or credentials.
 
-No verified Macar Intelligence business contact email or form provider was supplied. The original demonstration-only form was replaced with an honest contact-channel notice. Configure a verified business inbox or an endpoint and adjust the contact section before treating it as complete. Confirm the identity/operator information required by applicable law and review the Privacy notice against actual Cloudflare settings.
+## v1.2.2 — CEBIA screenshot-based visual refinement
+Uses the user-provided CEBIA Overview Dashboard screenshot solely as a visual reference. The isolated logo icon is cropped from the provided image; this is not an original master vector asset. Displayed KPI, status, file-name, and settings values are fictional, and no real sensitive data from the screenshot are included. Replaces the four illustrative demos (home and product, ENG and PL); no changes to CEBIA app.
 
-## Localization / SEO
-
-- English is default at `/`; Polish is at `/pl/` and can be selected in the header.
-- Both versions are fully static HTML for search indexing; `hreflang`, canonicals, OG tags, sitemap and robots included.
-- `Independent Software` remains in English in both locales.
-- No site analytics, trackers or form submissions are included.
-- Demonstration-only visualization data is explicitly labeled.
-- No third-party dependencies, analytics scripts or runtime API calls.
-
-## Local test
-
-From this directory: `python -m http.server 8000 --directory public` and visit `http://localhost:8000/` and `http://localhost:8000/pl/`.
-
-Version: v1.0 deployment candidate; 2026-11-09.
+- Replaced legacy provider-specific wording with the neutral label `PROVIDER` in the CEBIA demo where applicable.
