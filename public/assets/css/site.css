@@ -207,3 +207,10 @@
 .privacy-page p,.privacy-page li{line-height:1.8;color:#52617b;font-size:16px;max-width:780px;}
 .privacy-page .timestamp{font-size:12px;color:#72809a;}
 @media(max-width:610px){.contact-placeholder{min-height:250px}.privacy-page{padding-top:60px;padding-bottom:80px;}}
+
+/* v1.1 — verified contact channel, shared across EN and PL */
+.contact-email{display:inline-block;max-width:100%;overflow-wrap:anywhere;color:#1e4dc1;font-size:clamp(15px,1.6vw,20px);font-weight:800;letter-spacing:-.025em;text-decoration:none;margin:0 0 23px;}
+.contact-email:hover,.contact-email:focus-visible{text-decoration:underline;text-underline-offset:4px;}
+.footer-email{font-size:12px;color:#b6caff;text-decoration:none;overflow-wrap:anywhere;}
+.footer-email:hover,.footer-email:focus-visible{color:#fff;text-decoration:underline;text-underline-offset:4px;}
+@media(max-width:610px){.contact-email{font-size:16px;}.footer-email{font-size:12px;}}

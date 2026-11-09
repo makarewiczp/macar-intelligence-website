@@ -1,3 +1,10 @@
+## v1.1 — Contact update (2026-11-09)
+
+- Verified inbound address `contact@macarintelligence.com` appears in EN/PL contact sections and footers.
+- `mailto:` actions open the visitor’s configured email client. No form/backend.
+- Retains existing branding, Pages deployment and separate CEBIA environment.
+- Deploy: replace corresponding files in GitHub repo on `main`, Cloudflare Pages auto-deploys.
+
 # Macar Intelligence website — production candidate v1.0
 
 This is a **separate** static website for `macarintelligence.com`, derived from approved v0.4. No CEBIA files, repos, Workers or Supabase settings are included or modified.
