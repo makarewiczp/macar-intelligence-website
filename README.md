@@ -1,19 +1,12 @@
-# Macar Intelligence Website — v1.2.6 / CEBIA Showcase
+# Macar Intelligence — v1.2.9 (mobile-refined candidate)
 
-Production-ready candidate for Macar Intelligence website, **not** for the separate CEBIA app.
+This update builds on the **approved desktop Products design v1.2.8**. No intentional layout modifications are applied at desktop widths 1181px or larger.
 
-## Highlights
-- Rebuilt CEBIA preview in Products to use the available width rather than squeezing a complete dashboard into a narrow column.
-- More faithful CEBIA UI: true mark from provided screenshot, navy sidebar, overview and filters, CAP settings, billing model, KPI cards, Not Set warning.
-- Settings use a measured 3-column grid; responsive breakpoints prevent right-side controls from escaping the card.
-- Responsive compact rail, 2-column settings and KPI cards on phones.
-- All data are synthetic. Neutral PROVIDER labels; no customer or employer-sensitive data.
-- Only the Macar Intelligence website is changed; CEBIA app files and configuration are untouched.
+Updates:
+- Properly collapses the CEBIA sidebar to a narrow icon rail on phones.
+- Displays filters, settings and financial cards in legible two-column grids on phones.
+- Keeps synthetic demonstration data and neutral **PROVIDER** wording.
+- Keeps the link “Explore CEBIA features” removed.
+- Leaves the live CEBIA application untouched.
 
-## Publish
-1. Review locally by opening `public/index.html` (some absolute `/assets` links require a local static server).
-2. Upload all extracted contents at the GitHub repo root, preserving the `public` tree.
-3. Verify Cloudflare Pages deployment.
-4. Check `/`, `/pl/`, `/products/cebia/` and `/pl/products/cebia/` on desktop and mobile.
-
-Note: the dashboard is an illustrative synthetic reconstruction, not a live screenshot.
+Deployment: extract all files and upload the `public` directory and root files into the website's separate GitHub repository. Cloudflare Pages builds from `public`. Verify ENG and PL and mobile/desktop views before publishing.
