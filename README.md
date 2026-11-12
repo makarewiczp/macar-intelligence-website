@@ -10,3 +10,10 @@ Updates:
 - Leaves the live CEBIA application untouched.
 
 Deployment: extract all files and upload the `public` directory and root files into the website's separate GitHub repository. Cloudflare Pages builds from `public`. Verify ENG and PL and mobile/desktop views before publishing.
+
+## v1.2.12 — simplified footer branding
+
+- Footer logo now uses Macar Intelligence symbol + wordmark without the “Independent Software” descriptor in both languages and all six pages.
+- The larger reverse lockup in the brand/trust strip still includes the descriptor.
+- Preserved navigation, contact details, and CEBIA showcase.
+- Versioned, independent footer CSS avoids stale Cloudflare/browser styling.

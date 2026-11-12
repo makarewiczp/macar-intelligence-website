@@ -1,0 +1,30 @@
+/* Macar Intelligence 1.2.12 — compact footer brand.
+   Only the small footer lockup loses the descriptor; the full reverse logo
+   remains in the large brand section above. */
+.footer .brand-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.footer .brand-footer .footer-brand-symbol {
+  display: block;
+  flex: 0 0 auto;
+  width: 39px;
+  height: auto;
+}
+.footer .brand-footer .footer-brand-name {
+  display: block;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 780;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+@media (max-width: 610px) {
+  .footer .brand-footer .footer-brand-symbol { width: 36px; }
+  .footer .brand-footer .footer-brand-name { font-size: 16px; }
+}
